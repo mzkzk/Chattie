@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- عنوان التطبيق -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تطبيق الدردشة"
+            android:textSize="24sp"
+            android:textColor="@color/text_primary"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- حقل IP السيرفر -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/serverIpLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            android:hint="عنوان السيرفر">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/serverIpInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textUri"
+                android:textColor="@color/text_primary"
+                android:hint="مثال: 192.168.1.5 أو 10.0.2.2 للسيرفر المحلي"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- حقل اسم المستخدم -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernameLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            android:hint="اسم المستخدم">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usernameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColor="@color/text_primary"
+                android:hint="مثال: أحمد_2023 (بدون مسافات أو رموز غريبة)"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- حقل اسم الغرفة -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/roomIdLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            android:hint="اسم الغرفة">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/roomIdInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:hint="مثال: غرفة_العائلة أو اجتماع_العمل"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- زر الاتصال بالخادم -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/connectBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/secondary"
+            android:text="الاتصال بالخادم"
+            android:textColor="@color/white"
+            app:cornerRadius="8dp"/>
+
+        <!-- زر الإعدادات -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/settingsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/message_received"
+            android:text="الإعدادات"
+            android:textColor="@color/text_primary"
+            app:cornerRadius="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

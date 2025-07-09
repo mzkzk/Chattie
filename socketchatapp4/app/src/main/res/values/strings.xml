@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Chattie</string>
+    <string name="hint_server_ip">عنوان السيرفر</string>
+    <string name="hint_username">اسم المستخدم</string>
+    <string name="hint_room_id">معرف الغرفة</string>
+    <string name="hint_message">اكتب رسالة...</string>
+    <string name="action_chat">الدردشة النصية</string>
+    <string name="action_audio_call">مكالمة صوتية</string>
+    <string name="action_video_call">مكالمة مرئية</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="label_connected">متصل</string>
+    <string name="label_mute">كتم الصوت</string>
+    <string name="label_unmute">إلغاء الكتم</string>
+    <string name="label_end_call">إنهاء المكالمة</string>
+    <string name="label_switch_camera">تبديل الكاميرا</string>
+</resources>
